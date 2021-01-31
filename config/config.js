@@ -1,8 +1,8 @@
 
 module.exports = {
   "development": {
-    "username": postgres,
-    "password": null,
+    "username": "dhc_ateliware",
+    "password": "123456",
     "database": "dev_hiring_challenge",
     "host": "127.0.0.1",
     "dialect": "postgres"
