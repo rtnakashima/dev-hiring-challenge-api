@@ -15,8 +15,13 @@
   },
   "production": {
     "use_env_variable": "DATABASE_URL",
-    "host": "localhost",
-    "database": "dev_hiring_challenge",
-    "dialect": "postgres"
+    "ssl": true,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
