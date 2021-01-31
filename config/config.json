@@ -1,5 +1,4 @@
-
-module.exports = {
+{
   "development": {
     "username": "dhc_ateliware",
     "password": "123456",
@@ -15,10 +14,7 @@ module.exports = {
     "dialect": "postgres"
   },
   "production": {
-    "username": process.env.DATABASE_USR,
-    "password": process.env.DATABASE_PWD,
-    "database": process.env.DATABASE_NAME,
-    "host": process.env.DATABASE_URL,
+    "use_env_variable": "DATABASE_URL",
     "dialect": "postgres"
   }
 }
